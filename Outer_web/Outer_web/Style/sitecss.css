@@ -1,0 +1,414 @@
+/*Mise en forme générale du site///////////////////////////////////////////////////////////////////////////*/
+
+body {
+	margin-top: 0;
+	margin-bottom:0;
+	background-image: url(./Images/fond.jpg);
+	background-attachment:fixed;
+	background-repeat:no-repeat;
+	background-position:center center;
+	background-size: cover;
+	padding: 0px 0px;
+}
+.header{
+	color: white;
+	font-family: verdana;
+}
+/* # permet de faire référence à un "ID" d'identification unique */
+#MainContainer {
+	margin: 0px auto;
+	width: 70%;
+	border-width: 0px 10px; 
+	padding: 0px 10px;
+	background:rgba(100,100,100,0.2);
+
+	
+}
+h1 {
+	font-family: verdana;
+	text-align: center;
+	font-size : 60px;
+	color: white;
+}
+h2 {
+	font-family: verdana;
+	font-size: 30px;
+	color: white;
+}
+h3 {
+	font-family: verdana;
+	font-size: 18px;
+	color: white;
+}
+h3.successMessage {
+	font-size: 20px;
+	color: red;
+}
+/* Propriétés des paragraphes, s'appliquent à tous*/
+
+p {
+	color:white;
+	font-family: verdana;
+	font-size: 14px;
+}
+
+/* "." permet de faire allusion à une classe. Les balises associées à la classe "warning"
+vont donc utiliser ces propriétés en plus d'éventuelles autres*/
+
+/*Dans cette partie on s'occupe du menu////////////////////////////////////////////////////////////////*/
+img.logo{
+	width:130px;
+	height:100px;
+	float:left;
+	display: flex;
+
+
+}
+
+nav {
+    margin-top: 20px;
+}
+
+nav {
+	margin-top: 20px;
+	border: 2px solid #333; /* Ajout de la bordure */
+	padding: 15px; /* Ajout du padding */
+  }
+  
+  .menu {
+	display: flex;
+	justify-content: center;
+	padding: 0;
+	list-style-type: none;
+  }
+  
+  .menu li {
+	margin: 0 1rem;
+  }
+  
+  .menu a {
+	display: inline-block;
+	padding: 1rem 4rem;
+	text-align: center;
+	text-decoration: none;
+	color: #fff;
+	background-color: #333;
+	border-radius: 4px;
+	transition: all 0.2s ease; /*animation de transition*/
+	font-size: 20px;
+	font-family:Verdana;
+  }
+  
+  .menu a:hover {
+	background-color: #fff;
+	color: #333;
+	font-weight: bold;
+  }
+  
+
+/*/////////////////////////////////////////////////////////////////////////////////////////*/
+img.screen{  /*paramètres des images des posts*/
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top: 100px;
+	margin-bottom: 100px;
+	border-radius: 20px;
+	width: 500px;
+    padding: 2px;
+    border: 8px solid pink;
+    background-color: black;
+}
+
+
+/*mise en forme des liens*/
+.lien{
+	color: pink;
+}
+.lien:hover{
+	font-weight:bold;
+}
+/*mise en forme des formulaires*/	
+.formulaire{
+    padding-top: 40px;
+    padding-bottom: 60px;
+	color:white;
+	font-family: verdana;
+	text-align: center;  
+	
+}
+.texte {
+	margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    border-style: none;
+    background-color: peachpuff;
+}
+.bigTexte{
+	margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    border-style: none;
+    background-color: peachpuff;
+	text-align:start;
+	display: inline-block;
+    width: 300px;
+	height:30px;
+	text-indent:left;
+}
+
+
+label{
+    text-align: center;
+}
+label.description{
+	text-align:start;
+}
+.submit{
+    margin: 30px;
+    padding: 10px 30px 10px 30px;
+    background-color: #F5F5F5;
+    border-style: none;
+    font-size: 16px;
+    border-radius: 15px;
+}
+.submit:hover{
+	background-color:peachpuff;
+	color:white;
+	font-weight:bold;
+
+}
+
+
+.container{
+	display:flex;
+	align-items:center;
+	justify-content: center;
+}
+/*img{
+	max-width: 100%
+
+}*/
+.post_pic{
+	width:100%;
+	height:20%;
+}
+
+.textejpg{
+	font-size: 20px;
+	padding-left: 20px;
+}
+
+
+/*Essayons de rendre les posts jolis!*/
+.postStyle{
+	font-style: verdanna;
+	padding: 2px;
+    border: 3px solid peachpuff;
+	margin-bottom: 50px;
+	padding-left: 50pt;
+    padding-right: 50pt;
+	background-color:white;
+	border-end-end-radius: 25px;
+	border-start-start-radius:25px;
+	width:40%;
+	background-image: url(./Images/stars.png);
+
+
+	}
+
+.postTitle{
+	font-size: 25px;
+	font-weight: bold;
+	color:white;
+	
+	
+}
+.modif_time{
+	font-size:10px;
+}
+.postContent{
+
+	font-size:15px;
+	text-align:justify;
+	color:white;
+	width:90%;
+}
+
+.postAuthor{
+	font-size: 20px;
+	color: peachpuff;
+}
+.welcome h2{
+	text-align:center;
+}
+
+/*maintenant on rend joli les erreurs et autres*/
+#timer{
+	font-weight: bold;
+	color:rgb(253, 71, 71);
+	font-size:2em;
+	text-align:center;
+
+
+}
+p.error{
+	color:rgb(255, 94, 94);
+	text-align:center;
+	font-size:1.5em;
+	font-weight:bold;
+	font-family:verdanna;
+}
+
+
+/*Pour faire des potits nuages*/
+.cloudbox{
+	margin:50px 100px;
+}
+.cloudboxright{
+	margin:-50px 800px;
+}
+.cloudboxmid{
+	margin:-50px 400px;
+}
+.cloudbox, .cloudboxright, .cloudboxmid{
+	text-align: center;
+	box-sizing: border-box;
+	width     : 150px;
+	height    : 150px;
+	padding   : 80px 1em 0 1em;
+	font-family: verdanna;
+	/* On fait de la place pour les « oreilles »
+	   du nuage */
+	position: relative; 
+
+	background-color: rgb(141, 128, 128);
+	border-radius: 100% 100% 0 0; /*base plate du nuage*/
+  }
+  
+  .cloudbox::before, .cloudbox::after, .cloudboxright::after, .cloudboxright::before, .cloudboxmid::after, .cloudboxmid::before {
+	content: ''; /*On affiche les élements même si ils sont vide*/
+  
+	/* On positionne les pseudo-éléments à droite et à gauche de la boîte mais toujours en bas */
+	position: absolute;
+	bottom  : 0;
+  
+	/* On s'assure que les pseudo-éléments passent sous le contenu qu'il y aurait. */
+	z-index : -1;
+	background-color: rgb(141, 128, 128);
+	border-radius: 100%;
+  }
+  
+  .cloudbox::before, .cloudboxright::before, .cloudboxmid::before {
+	/* Voici la taille pour l'oreille gauche du nuage */
+	width  : 125px;
+	height : 125px;
+  
+	left: -80px;/* décalage un peu à gauche */
+	border-bottom-right-radius: 0; /*angle droit*/
+  }
+  
+  .cloudbox::after, .cloudboxright::after, .cloudboxmid::after {
+	/* Voici la taille pour l'oreille droite */
+	width: 100px;
+	height: 100px;
+
+	right:-60px;/* décalage un peu à droite */
+	border-bottom-left-radius: 0; /*angle droit*/
+  }
+
+
+img.pp{
+	background-size : contain;
+	background-position : 50% 50%; 
+	display : inline-block;
+	width : 150px; height : 150px;
+	border: none;
+	-moz-border-radius : 75px;
+	-webkit-border-radius : 75px;
+	border-radius : 75px;
+  }
+  .rond, .smolrond{ /*rond est utilisé pour afficher la pp de l'user sur sa pge*/
+	 border: none;
+	 -moz-border-radius : 75px;
+	 -webkit-border-radius : 75px;
+	 border-radius : 75px;
+   }
+   img.rond{width : 150px; height : 150px;}
+   img.smolrond{width : 100px; height : 100px;}
+
+.profil{
+	float:left;
+	margin: auto;
+	width: 70%;
+	border-width: 0px 10px; 
+	padding: 0px 10px;
+	background:rgba(0,0,0,0.7);
+}
+
+  .profil_page {
+	position: sticky;
+	top: 0;
+	display: flex;
+	align-items: center;
+  }
+  
+  .sticky,.sticky_post {
+	margin-left: auto;
+  }
+  
+  img.sticky {
+	top: 2em;
+	width: 50px;
+	height: 50px;
+	float: right;
+	position: absolute;
+	transform: translateY(-50%);
+	right: 35px;
+  }
+  
+  img.sticky_post {
+	top: 7em;
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	transform: translateY(-50%);
+	right: 40px;
+  }
+  /*img.sticky_logout{
+	top: 6em;
+	width: 50px;
+	height: 50px;
+	float: right;
+	position: absolute;
+	transform: translateY(-50%);
+	right: 35px;
+	position: sticky;
+  }*/
+
+  img.footer{
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	margin:auto;
+}
+	footer {
+		border-top: 2px solid rgb(35, 32, 32);
+		
+		max-width: 90%;
+		margin: 3rem auto;
+		padding-bottom: 30px;
+	  }
+	  
+  
+  p.citation{
+	font-style:italic;
+	font-weight: bold;
+	display: flex;
+	justify-content: center;
+	
+
+  }
+  div.rechercher{
+		display: flex;
+  }
